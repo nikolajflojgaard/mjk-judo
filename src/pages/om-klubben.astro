@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Om Klubben - Måløv Judoklub">
+  <Header />
+
+  <main class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Om Måløv Judoklub</h1>
+        <p class="text-xl text-gray-600">En del af Måløv i mange år</p>
+      </div>
+
+      <div class="prose prose-lg max-w-none">
+        <p class="lead">
+          Måløv Judoklub har i mange år været et samlingspunkt for judoentusiaster 
+          i Måløv og omegn. Vi er en klub hvor alle er velkomne — uanset alder, 
+          erfaring eller baggrund.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Vores værdier</h2>
+        
+        <div class="grid sm:grid-cols-3 gap-6 not-prose my-8">
+          <div class="bg-gray-50 p-6 rounded-xl text-center">
+            <div class="text-4xl mb-3">🤝</div>
+            <h3 class="font-semibold mb-2">Fællesskab</h3>
+            <p class="text-sm text-gray-600">Alle kender alle. Vi bakker hinanden op.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-xl text-center">
+            <div class="text-4xl mb-3">📚</div>
+            <h3 class="font-semibold mb-2">Læring</h3>
+            <p class="text-sm text-gray-600">Teknik først. Udvikling over sejr.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-xl text-center">
+            <div class="text-4xl mb-3">🎯</div>
+            <h3 class="font-semibold mb-2">Respekt</h3>
+            <p class="text-sm text-gray-600">For trænere, modstandere og dig selv.</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Vores instruktører</h2>
+        
+        <p>
+          Vores hold af erfarne instruktører sørger for at alle får den vejledning 
+          de har brug for. Vi har sortbælte-instruktører med mange års erfaring i 
+          at undervise både børn og voksne.
+        </p>
+
+        <div class="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center my-8">
+          <div class="text-center text-gray-400">
+            <div class="text-6xl mb-4">👨‍🏫</div>
+            <p>Billede af instruktører</p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Vores lokation</h2>
+        
+        <p>
+          Vi træner i lokaler på Måløv Hovedgade 50 — centralt i Måløv med gode 
+          transportmuligheder. Der er parkering i nærheden og busstoppested 
+          indenfor gåafstand.
+        </p>
+
+        <div class="bg-gray-50 rounded-xl p-6 my-8 not-prose">
+          <h3 class="font-semibold mb-4">Praktisk information</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>📍 Måløv Hovedgade 50, 2760 Måløv</li>
+            <li>🚗 Gratis parkering i nærheden</li>
+            <li>🚌 Bus 350S stopper 200m væk</li>
+            <li>🚆 Måløv Station 10 min gang</li>
+          </ul>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Bliv en del af klubben</h2>
+        
+        <p>
+          Vi optager nye medlemmer året rundt. Du kan møde op til en prøvetræning 
+          og se om judo er noget for dig. Der er ingen binding, og du kan prøve 
+          det af inden du melder dig ind.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-8 not-prose">
+          <a 
+            href="/kontakt" 
+            class="inline-flex justify-center items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
+          >
+            Kontakt Os
+          </a>
+          <a 
+            href="/traening" 
+            class="inline-flex justify-center items-center px-6 py-3 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+          >
+            Se Træningstider
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

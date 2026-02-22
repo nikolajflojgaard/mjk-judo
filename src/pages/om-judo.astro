@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Om Judo - Måløv Judoklub">
+  <Header />
+
+  <main class="py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg max-w-none">
+        <h1 class="text-4xl font-bold text-gray-900 mb-8">Hvad er Judo?</h1>
+
+        <p class="text-xl text-gray-600 mb-8">
+          Judo er en japansk kampsport der fokuserer på at bruge modstanderens kraft 
+          mod dem selv. Navnet betyder "den blide vej" — og det er netop essensen af judo.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Historie</h2>
+        <p>
+          Judo blev grundlagt af Jigoro Kano i Japan i 1882. Kano ville skabe en sport 
+          hvor teknik vandt over rå kraft — og hvor respekt og disciplin var lige så 
+          vigtige som selve kampsporten.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Judo i dag</h2>
+        <p>
+          I dag dyrker millioner af mennesker judo verden over. Det er en olympisk sport 
+          og en effektiv måde at træne kroppen og sindet på. Judo handler ikke om at 
+          slås — det handler om at kontrollere situationen og finde den mest effektive løsning.
+        </p>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Fordele ved judo</h2>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span class="text-accent text-xl">💪</span>
+            <span><strong>Fysisk styrke:</strong> Hele kroppen trænes — balance, koordination og kondition</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent text-xl">🧠</span>
+            <span><strong>Mental styrke:</strong> Lær at tænke klart under pres og fokusere fuldt ud</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent text-xl">🤝</span>
+            <span><strong>Respekt:</strong> Gensidig respekt er grundpillen i alt vi gør</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent text-xl">🛡️</span>
+            <span><strong>Selvforsvar:</strong> Teknikker der kan bruges i selvforsvarssituationer</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-accent text-xl">👥</span>
+            <span><strong>Fællesskab:</strong> Et stærkt fællesskab hvor alle bakker hinanden op</span>
+          </li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Belter og graduering</h2>
+        <p>
+          I judo arbejder man sig op gennem forskellige bæltegrader. Man starter som 
+          hvidt bælte og arbejder sig op mod sort bælte. Hver grad repræsenterer nye 
+          teknikker og dybere forståelse af sporten.
+        </p>
+
+        <div class="bg-gray-50 rounded-xl p-6 mt-8">
+          <h3 class="font-semibold mb-4">Klar til at starte?</h3>
+          <p class="text-gray-600 mb-4">
+            Du behøver ikke at have dyrket kampsport før. Vi tager imod dig uanset 
+            niveau og hjælper dig i gang.
+          </p>
+          <a 
+            href="/traening" 
+            class="inline-flex items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
+          >
+            Se Træningstider
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,251 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section class="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 lg:py-32">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-sm mb-6">
+              <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+              <span>Tag medlemmer fra Skovlunde, Ballerup & Smørum</span>
+            </div>
+            
+            <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              Styrke, balance <br/>
+              <span class="text-accent">og kammeratskab</span>
+            </h1>
+            
+            <p class="text-lg text-white/80 mb-8 max-w-lg">
+              Måløv Judoklub tilbyder judo for børn fra 7 år, ungdom og voksne. 
+              Kom og prøv 2 uger helt gratis — ingen erfaring nødvendig.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="/kontakt" 
+                class="inline-flex justify-center items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
+              >
+                Prøv 2 Uger Gratis
+              </a>
+              <a 
+                href="/traening" 
+                class="inline-flex justify-center items-center px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors"
+              >
+                Se Træningstider
+              </a>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="aspect-[4/3] bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center">
+              <div class="text-center text-white/40">
+                <div class="text-6xl mb-4">🥋</div>
+                <p>Billede af træning</p>
+              </div>
+            </div>
+
+            <!-- Stats card -->
+            <div class="absolute -bottom-6 -left-6 bg-white text-gray-900 p-4 rounded-xl shadow-xl">
+              <div class="flex items-center gap-3">
+                <div class="text-3xl">👥</div>
+                <div>
+                  <div class="font-bold text-lg">150+</div>
+                  <div class="text-sm text-gray-500">Aktive medlemmer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Props -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Hvorfor vælge Måløv Judoklub?</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Vi har dyrket judo i Måløv i mange år. Vores erfarne instruktører skaber 
+            et trygt miljø hvor alle kan udvikle sig.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Prop 1 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm">
+            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+              <span class="text-3xl">🧘</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Fysisk & Mental Balance</h3>
+            <p class="text-gray-600">
+              Når du træner judo arbejder du med hele kroppen og din evne til at være 
+              til stede i øjeblikket.
+            </p>
+          </div>
+
+          <!-- Prop 2 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm">
+            <div class="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6">
+              <span class="text-3xl">🤝</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Kammeratskab</h3>
+            <p class="text-gray-600">
+              I Måløv Judoklub kender alle hinanden og alle bakker hinanden op – 
+              både i og uden for dojo'en.
+            </p>
+          </div>
+
+          <!-- Prop 3 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm">
+            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+              <span class="text-3xl">🎯</span>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Respekt & Disciplin</h3>
+            <p class="text-gray-600">
+              Judo bygger på gamle japanske værdier om gensidig respekt. 
+              Det lærer vi videre til nye generationer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who is it for -->
+    <section class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Judo er for alle</h2>
+            
+            <p class="text-gray-600 mb-6">
+              Vores medlemmer kommer fra både Skovlunde, Ballerup, Smørum, Stenløse og Ølstykke. 
+              Alderen spænder bredt, og det er netop det der gør vores klub speciel.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span class="text-accent font-bold">7+</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Børnehold</h4>
+                  <p class="text-sm text-gray-600">Børn kan starte fra de er 7 år. Leg og læring kombineres.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span class="text-primary font-bold">12+</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Ungdomshold</h4>
+                  <p class="text-sm text-gray-600">Skifter til ungdomshold når de fylder 12 år.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span class="text-gray-600 font-bold">40+</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Voksenhold</h4>
+                  <p class="text-sm text-gray-600">Fremragende motionsform når du er fyldt 40.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center">
+            <div class="text-center text-gray-400">
+              <div class="text-6xl mb-4">👨‍👩‍👧‍👦</div>
+              <p>Billede af medlemmer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-accent">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Du behøver ikke være ninja</h2>
+        <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+          Det kræver ingen erfaring at starte med judo. Bare du har mod på at prøve kræfter 
+          med en sport, der giver god kondition, kropskontrol og et godt grin.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/kontakt" 
+            class="inline-flex justify-center items-center px-8 py-4 bg-white text-accent font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            Start Din Gratis Prøveperiode
+          </a>
+        </div>
+
+        <p class="text-white/70 text-sm mt-6">
+          Ingen binding. Du kan møde op til en af vores ugentlige træningspas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Find os i Måløv</h2>
+            
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-4">
+                <span class="text-2xl">📍</span>
+                <div>
+                  <p class="font-medium">Måløv Hovedgade 50</p>
+                  <p class="text-gray-600">2760 Måløv</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <span class="text-2xl">📧</span>
+                <div>
+                  <a href="mailto:mjkjudo@gmail.com" class="font-medium hover:text-accent">mjkjudo@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <span class="text-2xl">📞</span>
+                <div>
+                  <a href="tel:21418406" class="font-medium hover:text-accent">21 41 84 06</a>
+                </div>
+              </div>
+            </div>
+
+            <a 
+              href="/kontakt" 
+              class="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"
+            >
+              Kontakt Os
+            </a>
+          </div>
+
+          <div class="bg-gray-200 rounded-2xl aspect-video flex items-center justify-center">
+            <div class="text-center text-gray-400">
+              <div class="text-5xl mb-2">🗺️</div>
+              <p>Google Maps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,52 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-primary-dark text-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid md:grid-cols-4 gap-8">
+      <!-- Brand -->
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-lg">MJK</span>
+          </div>
+          <span class="font-semibold">Måløv Judoklub</span>
+        </div>
+        <p class="text-white/70 max-w-sm mb-4">
+          Judo for alle - fra 7 år og op. Fysisk og mental balance, kammeratskab og respekt.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="text-white/70 hover:text-white transition-colors">Facebook</a>
+          <a href="#" class="text-white/70 hover:text-white transition-colors">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h4 class="font-semibold mb-4">Navigation</h4>
+        <ul class="space-y-2 text-white/70">
+          <li><a href="/traening" class="hover:text-white transition-colors">Træning</a></li>
+          <li><a href="/om-judo" class="hover:text-white transition-colors">Om Judo</a></li>
+          <li><a href="/om-klubben" class="hover:text-white transition-colors">Om Klubben</a></li>
+          <li><a href="/kontakt" class="hover:text-white transition-colors">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-semibold mb-4">Kontakt</h4>
+        <ul class="space-y-2 text-white/70">
+          <li>Måløv Hovedgade 50</li>
+          <li>2760 Måløv</li>
+          <li><a href="tel:21418406" class="hover:text-white">21 41 84 06</a></li>
+          <li><a href="mailto:mjkjudo@gmail.com" class="hover:text-white">mjkjudo@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/50 text-sm">
+      <p>© {currentYear} Måløv Judoklub. Alle rettigheder forbeholdes.</p>
+    </div>
+  </div>
+</footer>

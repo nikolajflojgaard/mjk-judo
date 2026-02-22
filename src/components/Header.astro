@@ -1,0 +1,83 @@
+---
+const navLinks = [
+  { href: '/traening', label: 'Træning' },
+  { href: '/om-judo', label: 'Om Judo' },
+  { href: '/om-klubben', label: 'Om Klubben' },
+  { href: '/kontakt', label: 'Kontakt' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-lg">MJK</span>
+        </div>
+        <span class="font-semibold text-gray-900 hidden sm:block">Måløv Judoklub</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        {navLinks.map(link => (
+          <a 
+            href={link.href}
+            class:list={[
+              "text-sm font-medium transition-colors",
+              currentPath === link.href 
+                ? "text-accent" 
+                : "text-gray-600 hover:text-primary"
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+        <a 
+          href="/kontakt" 
+          class="ml-4 px-4 py-2 bg-accent text-white text-sm font-medium rounded-lg hover:bg-accent-dark transition-colors"
+        >
+          Prøv Gratis
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <button 
+        id="mobile-menu-btn"
+        class="md:hidden p-2 text-gray-600 hover:text-primary"
+        aria-label="Menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav id="mobile-menu" class="hidden md:hidden pb-4">
+      {navLinks.map(link => (
+        <a 
+          href={link.href}
+          class="block py-2 text-gray-600 hover:text-primary font-medium"
+        >
+          {link.label}
+        </a>
+      ))}
+      <a 
+        href="/kontakt" 
+        class="block mt-2 px-4 py-2 bg-accent text-white text-center font-medium rounded-lg"
+      >
+        Prøv Gratis
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
