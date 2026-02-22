@@ -45,11 +45,12 @@ import Footer from '../components/Footer.astro';
           </div>
 
           <div class="relative">
-            <div class="aspect-[4/3] bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center">
-              <div class="text-center text-white/40">
-                <div class="text-6xl mb-4">🥋</div>
-                <p>Billede af træning</p>
-              </div>
+            <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
+              <img 
+                src="/images/mathilde-oliver.jpg" 
+                alt="Judo træning i Måløv Judoklub"
+                class="w-full h-full object-cover"
+              />
             </div>
 
             <!-- Stats card -->
@@ -163,11 +164,12 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
 
-          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center">
-            <div class="text-center text-gray-400">
-              <div class="text-6xl mb-4">👨‍👩‍👧‍👦</div>
-              <p>Billede af medlemmer</p>
-            </div>
+          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center overflow-hidden">
+            <img 
+              src="/images/group.png" 
+              alt="Judo medlemmer"
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
