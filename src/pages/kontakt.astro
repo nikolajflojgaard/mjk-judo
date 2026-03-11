@@ -10,14 +10,24 @@ import Footer from '../components/Footer.astro';
   <main class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">Kontakt Os</h1>
-        <p class="text-xl text-gray-600">Har du spørgsmål eller vil du prøve judo?</p>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Book en prøvetræning</h1>
+        <p class="text-xl text-gray-600">Har du spørgsmål eller vil du i gang? Skriv til os, så finder vi det rigtige hold.</p>
       </div>
 
       <div class="grid lg:grid-cols-2 gap-12">
         <!-- Contact Info -->
         <div>
-          <h2 class="text-2xl font-semibold mb-6">Kontaktinformation</h2>
+          <h2 class="text-2xl font-semibold mb-6">Det praktiske</h2>
+
+          <div class="mb-8 rounded-2xl bg-primary-dark text-white p-6">
+            <h3 class="text-lg font-semibold mb-3">Sådan foregår det</h3>
+            <ol class="space-y-3 text-sm text-white/90 list-decimal list-inside">
+              <li>Udfyld formularen eller ring til os</li>
+              <li>Vi peger dig mod det rigtige hold</li>
+              <li>Du møder op i almindeligt træningstøj</li>
+              <li>Du prøver 2 uger gratis</li>
+            </ol>
+          </div>
           
           <div class="space-y-6">
             <div class="flex items-start gap-4">
@@ -56,8 +66,8 @@ import Footer from '../components/Footer.astro';
               </div>
               <div>
                 <h3 class="font-semibold">Træningstider</h3>
-                <p class="text-gray-600">Tirsdag & Torsdag<br/>Børn: 17:00-18:00<br/>Ungdom/Voksne: 19:30-21:00</p>
-                <a href="/traening" class="text-accent text-sm hover:underline">Se detaljer</a>
+                <p class="text-gray-600">Tirsdag & Torsdag<br/>Børn: 18:00-19:00<br/>Ungdom/Voksne: 19:00-21:00</p>
+                <p class="text-accent text-sm">Mød bare op eller skriv til os først.</p>
               </div>
             </div>
           </div>
@@ -76,6 +86,7 @@ import Footer from '../components/Footer.astro';
           <h2 class="text-2xl font-semibold mb-6">Send os en besked</h2>
           
           <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-4">
+            <input type="hidden" name="subject" value="Ny forespørgsel om prøvetræning - Måløv Judoklub" />
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Navn</label>
               <input 
@@ -120,8 +131,7 @@ import Footer from '../components/Footer.astro';
               >
                 <option value="">Vælg...</option>
                 <option value="born">Børnehold (7-11 år)</option>
-                <option value="ungdom">Ungdomshold (12-17 år)</option>
-                <option value="voksne">Voksenhold (18+ år)</option>
+                <option value="ungdom-voksen">Ungdoms- og voksenhold (12+ år)</option>
                 <option value="usikker">Ved ikke / Vil høre mere</option>
               </select>
             </div>
@@ -133,14 +143,14 @@ import Footer from '../components/Footer.astro';
                 name="message" 
                 rows="4"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent"
-                placeholder="Skriv din besked her..."></textarea>
+                placeholder="Skriv fx alder, om det er til dit barn eller dig selv, og hvornår I gerne vil starte."></textarea>
             </div>
 
             <button 
               type="submit"
               class="w-full px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
             >
-              Send Besked
+              Send forespørgsel om prøvetræning
             </button>
           </form>
 

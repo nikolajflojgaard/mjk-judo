@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
+<Layout title="Måløv Judoklub - Judo i Måløv for børn, unge og voksne" description="Lokal judoklub i Måløv for børn, unge og voksne. Træn tirsdag og torsdag, prøv 2 uger gratis, og bliv en del af fællesskabet.">
   <Header />
 
   <main>
@@ -15,7 +15,7 @@ import Footer from '../components/Footer.astro';
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-sm mb-6">
               <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-              <span>Medlemmer fra Skovlunde, Ballerup & Smørum</span>
+              <span>Klub i Måløv, medlemmer fra hele nærområdet</span>
             </div>
             
             <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">
@@ -28,18 +28,38 @@ import Footer from '../components/Footer.astro';
               Kom og prøv 2 uger helt gratis — ingen erfaring nødvendig.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="bg-white/10 border border-white/15 rounded-2xl p-4 mb-8 max-w-xl backdrop-blur-sm">
+              <div class="flex items-center gap-2 text-sm font-semibold text-white mb-3">
+                <span>🕒</span>
+                <span>Træningstider</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                <div class="rounded-xl bg-white/10 px-3 py-3">
+                  <div class="text-white font-semibold leading-tight">Børnehold (7-11 år)</div>
+                  <div class="text-white/80">Tirs + tors</div>
+                  <div class="text-white/90 font-medium">18:00-19:00</div>
+                </div>
+                <div class="rounded-xl bg-white/10 px-3 py-3">
+                  <div class="text-white font-semibold leading-tight">Ungdom & voksne (12+)</div>
+                  <div class="text-white/80">Tirs + tors</div>
+                  <div class="text-white/90 font-medium">19:00-21:00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 sm:items-stretch">
               <a 
                 href="/kontakt" 
-                class="inline-flex justify-center items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
+                class="inline-flex min-h-[52px] justify-center items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
               >
                 Prøv 2 Uger Gratis
               </a>
               <a 
-                href="/traening" 
-                class="inline-flex justify-center items-center px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors"
+                href="/kontakt" 
+                class="inline-flex min-h-[52px] justify-center items-center px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors border border-white/15"
               >
-                Se Træningstider
+                Skriv til os
               </a>
             </div>
           </div>
@@ -47,8 +67,8 @@ import Footer from '../components/Footer.astro';
           <div class="relative">
             <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&q=80" 
-                alt="Judo træning"
+                src="/images/mathilde-oliver.jpg" 
+                alt="Judo træning i Måløv Judoklub"
                 class="w-full h-full object-cover"
               />
             </div>
@@ -62,6 +82,35 @@ import Footer from '../components/Footer.astro';
                   <div class="text-sm text-gray-500">Aktive medlemmer</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick trust strip -->
+    <section class="bg-white border-b border-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 text-sm">
+          <div class="flex items-center gap-3 rounded-xl bg-gray-50 px-4 py-3">
+            <span class="text-xl">🎁</span>
+            <div>
+              <div class="font-semibold text-gray-900">2 uger gratis prøveperiode</div>
+              <div class="text-gray-600">Ingen binding. Bare mød op og prøv.</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 rounded-xl bg-gray-50 px-4 py-3">
+            <span class="text-xl">📍</span>
+            <div>
+              <div class="font-semibold text-gray-900">Midt i Måløv</div>
+              <div class="text-gray-600">Nem adgang for hele nærområdet.</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 rounded-xl bg-gray-50 px-4 py-3">
+            <span class="text-xl">👥</span>
+            <div>
+              <div class="font-semibold text-gray-900">Børn, unge og voksne</div>
+              <div class="text-gray-600">Hold for både nye og øvede.</div>
             </div>
           </div>
         </div>
@@ -130,8 +179,9 @@ import Footer from '../components/Footer.astro';
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Judo er for alle</h2>
             
             <p class="text-gray-600 mb-6">
-              Vores medlemmer kommer fra både Skovlunde, Ballerup, Smørum, Stenløse og Ølstykke. 
-              Alderen spænder bredt, og det er netop det der gør vores klub speciel.
+              Måløv Judoklub er en lokal klub med plads til både børn, unge og voksne. Nogle kommer for motion,
+              nogle for fællesskabet, og nogle fordi de bare gerne vil prøve judo for første gang. Det er netop
+              blandingen, der gør klubben rar at være en del af.
             </p>
 
             <div class="space-y-4">
@@ -157,12 +207,14 @@ import Footer from '../components/Footer.astro';
             </div>
           </div>
 
-          <div class="bg-gray-100 rounded-2xl aspect-square flex items-center justify-center overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80" 
-              alt="Judo træning"
-              class="w-full h-full object-cover"
-            />
+          <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl overflow-hidden p-3 sm:p-4 shadow-sm">
+            <div class="aspect-[4/5] sm:aspect-square rounded-xl overflow-hidden bg-white flex items-center justify-center">
+              <img 
+                src="/images/judo-er-for-alle.jpg" 
+                alt="Medlemmer i Måløv Judoklub samlet efter træning"
+                class="w-full h-full object-contain object-center"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -170,72 +222,202 @@ import Footer from '../components/Footer.astro';
 
     <!-- CTA Section -->
     <section class="py-20 bg-accent">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Du behøver ikke være ninja</h2>
-        <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-          Det kræver ingen erfaring at starte med judo. Bare du har mod på at prøve kræfter 
-          med en sport, der giver god kondition, kropskontrol og et godt grin.
-        </p>
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-[1.4fr_0.9fr] gap-8 items-center">
+          <div class="text-center lg:text-left">
+            <h2 class="text-3xl font-bold text-white mb-4">Du behøver ikke være ninja</h2>
+            <p class="text-white/90 text-lg mb-8 max-w-2xl lg:max-w-none">
+              Det kræver ingen erfaring at starte med judo. Bare du har mod på at prøve kræfter 
+              med en sport, der giver god kondition, kropskontrol og et godt grin.
+            </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a 
-            href="/kontakt" 
-            class="inline-flex justify-center items-center px-8 py-4 bg-white text-accent font-semibold rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            Start Din Gratis Prøveperiode
-          </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a 
+                href="/kontakt" 
+                class="inline-flex justify-center items-center px-8 py-4 bg-white text-accent font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                Start Din Gratis Prøveperiode
+              </a>
+              <a 
+                href="tel:21418406" 
+                class="inline-flex justify-center items-center px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors border border-white/15"
+              >
+                Ring 21 41 84 06
+              </a>
+            </div>
+
+            <p class="text-white/70 text-sm mt-6">
+              Ingen binding. Du kan møde op til en af vores ugentlige træningspas.
+            </p>
+          </div>
+
+          <div class="bg-white/10 border border-white/15 rounded-2xl p-5 text-white backdrop-blur-sm">
+            <h3 class="font-semibold text-lg mb-4">Det praktiske</h3>
+            <ul class="space-y-3 text-white/90 text-sm">
+              <li class="flex items-start gap-3"><span>📍</span><span>Måløv Hovedgade 50, 2760 Måløv</span></li>
+              <li class="flex items-start gap-3"><span>🕒</span><span>Tirsdag og torsdag</span></li>
+              <li class="flex items-start gap-3"><span>🧒</span><span>Børnehold: 18:00-19:00</span></li>
+              <li class="flex items-start gap-3"><span>👤</span><span>Ungdom & voksne: 19:00-21:00</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- First time -->
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 text-primary rounded-full text-sm font-medium mb-5">
+              <span>🥋</span>
+              <span>Første gang i klubben</span>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Det skal være nemt at starte</h2>
+            <p class="text-gray-600 max-w-xl mb-8">
+              Du behøver ikke kende reglerne på forhånd. Mød op lidt før, hav almindeligt træningstøj på,
+              og så hjælper vi dig i gang. Resten finder vi ud af sammen.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="rounded-2xl border border-gray-200 p-5 bg-gray-50">
+                <div class="text-2xl mb-3">⏰</div>
+                <h3 class="font-semibold mb-2">Kom 10 minutter før</h3>
+                <p class="text-sm text-gray-600">Så er der tid til at finde rundt, hilse på og lande ordentligt.</p>
+              </div>
+              <div class="rounded-2xl border border-gray-200 p-5 bg-gray-50">
+                <div class="text-2xl mb-3">👕</div>
+                <h3 class="font-semibold mb-2">Tag træningstøj på</h3>
+                <p class="text-sm text-gray-600">Du behøver ikke egen dragt første gang. Løst tøj er fint.</p>
+              </div>
+              <div class="rounded-2xl border border-gray-200 p-5 bg-gray-50">
+                <div class="text-2xl mb-3">🙂</div>
+                <h3 class="font-semibold mb-2">Ingen erfaring nødvendig</h3>
+                <p class="text-sm text-gray-600">Vi forventer ikke at du kan noget. Det er derfor du kommer.</p>
+              </div>
+              <div class="rounded-2xl border border-gray-200 p-5 bg-gray-50">
+                <div class="text-2xl mb-3">📞</div>
+                <h3 class="font-semibold mb-2">Skriv eller mød bare op</h3>
+                <p class="text-sm text-gray-600">Du må gerne kontakte os først, men du er også velkommen til bare at komme.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl bg-primary-dark text-white p-6 lg:p-8 shadow-sm">
+            <h3 class="text-2xl font-bold mb-4">Klar til prøvetræning?</h3>
+            <p class="text-white/80 mb-6">
+              Det hurtigste næste skridt er ikke at overveje det i tre uger. Det er at møde op.
+            </p>
+            <ul class="space-y-3 text-white/90 text-sm mb-8">
+              <li class="flex items-start gap-3"><span>✅</span><span>2 ugers gratis prøveperiode</span></li>
+              <li class="flex items-start gap-3"><span>✅</span><span>Hold for børn, unge og voksne</span></li>
+              <li class="flex items-start gap-3"><span>✅</span><span>Trygt miljø med erfarne instruktører</span></li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="/kontakt" class="inline-flex justify-center items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors">Book en prøvetræning</a>
+              <a href="tel:21418406" class="inline-flex justify-center items-center px-6 py-3 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors border border-white/15">Ring til os</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Spørgsmål vi ofte får</h2>
+          <p class="text-gray-600">De ting folk typisk gerne vil vide, før de møder op første gang.</p>
         </div>
 
-        <p class="text-white/70 text-sm mt-6">
-          Ingen binding. Du kan møde op til en af vores ugentlige træningspas.
-        </p>
+        <div class="space-y-4">
+          <details class="group bg-white border border-gray-200 rounded-2xl p-5" open>
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-gray-900">Kan man starte uden erfaring?<span class="text-gray-400 group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="mt-3 text-gray-600">Ja. De fleste starter uden at have prøvet judo før. Vi hjælper dig i gang fra bunden.</p>
+          </details>
+          <details class="group bg-white border border-gray-200 rounded-2xl p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-gray-900">Skal man have en gi?<span class="text-gray-400 group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="mt-3 text-gray-600">Nej, ikke første gang. Klubben har gi'er i alle størrelser, så du kan sagtens starte uden at have dit eget udstyr.</p>
+          </details>
+          <details class="group bg-white border border-gray-200 rounded-2xl p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-gray-900">Hvornår kan børn starte?<span class="text-gray-400 group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="mt-3 text-gray-600">Børn kan starte fra 7 år på børneholdet, som træner tirsdag og torsdag fra 18:00 til 19:00.</p>
+          </details>
+          <details class="group bg-white border border-gray-200 rounded-2xl p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-gray-900">Må man bare møde op?<span class="text-gray-400 group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="mt-3 text-gray-600">Ja. Du er velkommen til bare at møde op. Men du må også gerne skrive eller ringe først, hvis det føles nemmere.</p>
+          </details>
+          <details class="group bg-white border border-gray-200 rounded-2xl p-5">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-semibold text-gray-900">Hvor træner I?<span class="text-gray-400 group-open:rotate-45 transition-transform">+</span></summary>
+            <p class="mt-3 text-gray-600">Vi træner på Måløv Hovedgade 50 i 2760 Måløv. Det er nemt at komme til fra både Måløv og resten af nærområdet.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- Location -->
     <section class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12">
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Find os i Måløv</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Find os i Måløv</h2>
+            <p class="text-gray-600 mb-8 max-w-lg">
+              Vi træner centralt i Måløv med nem adgang for både lokale familier og medlemmer fra resten af nærområdet.
+            </p>
             
             <div class="space-y-4 mb-8">
-              <div class="flex items-start gap-4">
+              <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm border border-gray-100">
                 <span class="text-2xl">📍</span>
                 <div>
                   <p class="font-medium">Måløv Hovedgade 50</p>
                   <p class="text-gray-600">2760 Måløv</p>
+                  <a href="https://maps.google.com/?q=M%C3%A5l%C3%B8v%20Hovedgade%2050%2C%202760%20M%C3%A5l%C3%B8v" target="_blank" rel="noopener noreferrer" class="text-sm text-accent hover:underline">Åbn i Google Maps</a>
                 </div>
               </div>
 
-              <div class="flex items-start gap-4">
-                <span class="text-2xl">📧</span>
-                <div>
-                  <a href="mailto:mjkjudo@gmail.com" class="font-medium hover:text-accent">mjkjudo@gmail.com</a>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm border border-gray-100">
+                  <span class="text-2xl">📧</span>
+                  <div>
+                    <p class="font-medium">Email</p>
+                    <a href="mailto:mjkjudo@gmail.com" class="text-gray-600 hover:text-accent">mjkjudo@gmail.com</a>
+                  </div>
                 </div>
-              </div>
 
-              <div class="flex items-start gap-4">
-                <span class="text-2xl">📞</span>
-                <div>
-                  <a href="tel:21418406" class="font-medium hover:text-accent">21 41 84 06</a>
+                <div class="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm border border-gray-100">
+                  <span class="text-2xl">📞</span>
+                  <div>
+                    <p class="font-medium">Telefon</p>
+                    <a href="tel:21418406" class="text-gray-600 hover:text-accent">21 41 84 06</a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <a 
-              href="/kontakt" 
-              class="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"
-            >
-              Kontakt Os
-            </a>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="/kontakt" 
+                class="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"
+              >
+                Kontakt os
+              </a>
+              <a 
+                href="https://maps.google.com/?q=M%C3%A5l%C3%B8v%20Hovedgade%2050%2C%202760%20M%C3%A5l%C3%B8v" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors border border-gray-200"
+              >
+                Åbn rutevejledning
+              </a>
+            </div>
           </div>
 
-          <div class="bg-gray-200 rounded-2xl aspect-video flex items-center justify-center">
-            <div class="text-center text-gray-400">
-              <div class="text-5xl mb-2">🗺️</div>
-              <p>Google Maps</p>
-            </div>
+          <div class="rounded-2xl aspect-video overflow-hidden border border-gray-200 shadow-sm bg-gray-100">
+            <iframe
+              title="Måløv Judoklub på Google Maps"
+              src="https://maps.google.com/maps?q=M%C3%A5l%C3%B8v%20Hovedgade%2050%2C%202760%20M%C3%A5l%C3%B8v&z=15&output=embed"
+              class="w-full h-full"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>

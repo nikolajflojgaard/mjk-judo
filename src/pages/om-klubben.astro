@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Om Klubben - Måløv Judoklub">
+<Layout title="Om Klubben - Måløv Judoklub" description="Læs om Måløv Judoklub, vores værdier, træning i Måløv og hvordan du eller dit barn kan starte til judo.">
   <Header />
 
   <main class="py-16">
@@ -16,9 +16,9 @@ import Footer from '../components/Footer.astro';
 
       <div class="prose prose-lg max-w-none">
         <p class="lead">
-          Måløv Judoklub har i mange år været et samlingspunkt for judoentusiaster 
-          i Måløv og omegn. Vi er en klub hvor alle er velkomne — uanset alder, 
-          erfaring eller baggrund.
+          Måløv Judoklub er en lokal klub for børn, unge og voksne, der gerne vil træne judo i et trygt miljø.
+          Vi er ikke bare et sted man møder op og går igen. Vi er et fællesskab, hvor man lærer sporten,
+          lærer hinanden at kende og udvikler sig over tid.
         </p>
 
         <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Vores værdier</h2>
@@ -43,19 +43,33 @@ import Footer from '../components/Footer.astro';
           </div>
         </div>
 
-        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Vores instruktører</h2>
+        <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Hvad du kan forvente hos os</h2>
         
-        <p>
-          Vores hold af erfarne instruktører sørger for at alle får den vejledning 
-          de har brug for. Vi har sortbælte-instruktører med mange års erfaring i 
-          at undervise både børn og voksne.
-        </p>
-
-        <div class="bg-gray-100 rounded-2xl aspect-video flex items-center justify-center my-8">
-          <div class="text-center text-gray-400">
-            <div class="text-6xl mb-4">👨‍🏫</div>
-            <p>Billede af instruktører</p>
+        <div class="grid sm:grid-cols-2 gap-4 not-prose my-8">
+          <div class="rounded-xl bg-white border border-gray-200 p-5">
+            <h3 class="font-semibold mb-2">Tryg start</h3>
+            <p class="text-sm text-gray-600">Nye medlemmer bliver taget godt imod og hjulpet i gang i et tempo, de kan følge med i.</p>
           </div>
+          <div class="rounded-xl bg-white border border-gray-200 p-5">
+            <h3 class="font-semibold mb-2">Plads til flere niveauer</h3>
+            <p class="text-sm text-gray-600">Du behøver ikke komme med erfaring. Vi har plads til både nysgerrige begyndere og mere øvede.</p>
+          </div>
+          <div class="rounded-xl bg-white border border-gray-200 p-5">
+            <h3 class="font-semibold mb-2">Respekt i træningen</h3>
+            <p class="text-sm text-gray-600">Judo handler ikke kun om teknik, men også om disciplin, samarbejde og respekt for andre.</p>
+          </div>
+          <div class="rounded-xl bg-white border border-gray-200 p-5">
+            <h3 class="font-semibold mb-2">Faste træningstider</h3>
+            <p class="text-sm text-gray-600">Vi træner tirsdag og torsdag, så det er nemt at få til at passe ind i hverdagen.</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden my-8 border border-gray-200 shadow-sm bg-gray-100">
+          <img
+            src="/images/judo-er-for-alle.jpg"
+            alt="Stemningsbillede fra Måløv Judoklub"
+            class="w-full aspect-video object-cover object-center"
+          />
         </div>
 
         <h2 class="text-2xl font-semibold text-gray-900 mt-12 mb-4">Vores lokation</h2>
@@ -70,6 +84,8 @@ import Footer from '../components/Footer.astro';
           <h3 class="font-semibold mb-4">Praktisk information</h3>
           <ul class="space-y-2 text-gray-600">
             <li>📍 Måløv Hovedgade 50, 2760 Måløv</li>
+            <li>🕒 Børnehold: tirsdag og torsdag 18:00-19:00</li>
+            <li>🕒 Ungdoms- og voksenhold: tirsdag og torsdag 19:00-21:00</li>
             <li>🚗 Gratis parkering i nærheden</li>
             <li>🚌 Bus 350S stopper 200m væk</li>
             <li>🚆 Måløv Station 10 min gang</li>
@@ -89,13 +105,13 @@ import Footer from '../components/Footer.astro';
             href="/kontakt" 
             class="inline-flex justify-center items-center px-6 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent-dark transition-colors"
           >
-            Kontakt Os
+            Kontakt os
           </a>
           <a 
-            href="/traening" 
+            href="tel:21418406" 
             class="inline-flex justify-center items-center px-6 py-3 bg-gray-100 text-gray-900 font-semibold rounded-lg hover:bg-gray-200 transition-colors"
           >
-            Se Træningstider
+            Ring til klubben
           </a>
         </div>
       </div>
