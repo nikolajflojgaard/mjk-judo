@@ -160,6 +160,44 @@ rss.xml
 - Billeder og sektioner er justeret til klubbens faktiske indhold
 - Build er gjort fungerende igen
 
+## 🔎 SEO
+
+Der er lavet et grundlæggende SEO-setup i projektet, så siden ikke bare er pæn, men også teknisk sat ordentligt op.
+
+### Det omfatter
+
+- side-specifikke **title** og **meta description** på de vigtigste sider
+- **canonical URLs** via layoutet
+- **Open Graph** metadata til deling på sociale medier
+- **Twitter card** metadata
+- **robots meta** (`index,follow`)
+- **structured data / schema markup** for klubben som lokal sportsaktivitet
+- korrekt **robots.txt**
+- site-konfiguration opdateret fra starter-template til rigtig domæne-/brandinfo
+
+### Hvor det er sat op
+
+- Globalt layout og metadata:
+  - `src/layouts/Layout.astro`
+- Site / brand config:
+  - `src/consts.ts`
+- Robots:
+  - `src/pages/robots.txt.ts`
+- Side-specifikke metadata:
+  - `src/pages/index.astro`
+  - `src/pages/kontakt.astro`
+  - `src/pages/om-judo.astro`
+  - `src/pages/om-klubben.astro`
+  - `src/pages/traening.astro`
+
+### Bemærkning
+
+Det her er et solidt **baseline SEO-setup**. Hvis siden senere skal pushes hårdere organisk, er næste lag typisk:
+- mere lokal søgeordsoptimeret tekst
+- flere landingssider / indholdssider
+- FAQ schema udvidelse
+- bedre delingsbilleder / OG-billeder pr. side
+
 ## 📝 Bemærkninger
 
 Projektet stammer fra en Astro-baseret starter, men er tilpasset kraftigt til Måløv Judoklub.
