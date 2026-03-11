@@ -1,127 +1,127 @@
-# Måløv Judoklub website
+# Måløv Judoklub
 
-Website for **Måløv Judoklub** built in **Astro**.
+Hjemmeside for **Måløv Judoklub** — lokal judoklub for børn, unge og voksne i Måløv.
 
-The site is designed as a simple, local club website focused on one thing: making it easy for new members and parents to understand what the club is, where it is, when training happens, and how to get started.
+## 🌐 Live site
 
-## What this project is
+**Repo:** https://github.com/nikolajflojgaard/mjk-judo
 
-This is the public website for Måløv Judoklub.
+## 📝 Om klubben
 
-It is not a complex web app. It is a fast, static marketing/information site with:
+Måløv Judoklub tilbyder judo i et trygt og lokalt fællesskab med fokus på:
+- Bevægelse, balance og kropskontrol
+- Respekt og disciplin
+- Fællesskab for børn, unge og voksne
+- En nem og tryg start for nye medlemmer
 
-- front page with clear calls to action
-- training times shown early in the user flow
-- contact / trial training flow
-- local club information
-- FAQ for common beginner questions
-- Google Maps embed and contact details
-- mobile-friendly layout for phones, tablets, and laptops
+**Adresse:** Måløv Hovedgade 50, 2760 Måløv  
+**Telefon:** 21 41 84 06  
+**Email:** mjkjudo@gmail.com
 
-## What was improved
+## 🕒 Træningstider
 
-The site was significantly cleaned up and tightened from a UX/content perspective.
+**Børnehold (7-11 år)**
+- Tirsdag: 18:00–19:00
+- Torsdag: 18:00–19:00
 
-### Content and UX improvements
+**Ungdoms- og voksenhold (12+ år)**
+- Tirsdag: 19:00–21:00
+- Torsdag: 19:00–21:00
 
-- rewrote the homepage to feel more like a real local club and less like a generic template
-- moved training times into the hero section so they are visible immediately
-- simplified the navigation by removing unnecessary emphasis on the dedicated training page
-- improved button hierarchy and CTA clarity
-- added a quick trust section under the hero
-- added a **first-time / getting started** section
-- added an **FAQ** section for common newcomer questions
-- improved the **Om klubben** page with more realistic club-oriented content
-- improved the **Kontakt** page so it works more like a trial-training intake page
-- updated the copy to better match the club and the real onboarding flow
+## 🚀 Teknologi
 
-### Visual improvements
+- **Framework:** Astro 5.x
+- **Styling:** Tailwind CSS
+- **Type:** Statisk website
+- **Maps:** Google Maps embed
 
-- replaced placeholder/fake content in several places
-- added and adjusted local imagery
-- improved the image treatment in the “Judo er for alle” section
-- replaced the fake map section with a real embedded Google Map
-- improved the location/contact section layout
-- added real Facebook and Instagram links
-
-### Technical cleanup
-
-- fixed missing package dependencies required for build
-- verified that the site builds successfully with Astro
-- kept the project as a simple static site
-
-## Current pages
-
-- `/` — homepage
-- `/kontakt` — contact / trial training page
-- `/om-judo` — about judo
-- `/om-klubben` — about the club
-- `/traening` — training schedule page
-
-## Training times
-
-Current training times in the project:
-
-- **Børnehold:** Tuesday + Thursday, **18:00–19:00**
-- **Ungdoms- og voksenhold:** Tuesday + Thursday, **19:00–21:00**
-
-## Tech stack
-
-- [Astro](https://astro.build/)
-- Tailwind CSS
-- Static pages
-
-## Project structure
-
-```txt
-src/
-  components/
-  layouts/
-  pages/
-public/
-  images/
-```
-
-## Local development
-
-Install dependencies:
+## 🛠️ Udvikling
 
 ```bash
+# Install dependencies
 npm install
-```
 
-Run local dev server:
-
-```bash
+# Start dev server
 npm run dev
-```
 
-Build the site:
-
-```bash
+# Build
 npm run build
-```
 
-Preview production build:
-
-```bash
+# Preview build
 npm run preview
 ```
 
-## Notes
+## 📁 Projektstruktur
 
-There is still some template heritage in the repo from the Astro starter structure, but the public-facing site itself has been heavily adapted for Måløv Judoklub.
+```text
+mjk-judo/
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   └── styles/
+├── public/
+│   └── images/
+└── package.json
+```
 
-If this project keeps evolving, the next sensible steps would be:
+## 📄 Sider
 
-- replace remaining starter-template leftovers
-- connect the contact form to a real form backend
-- add more real club photos
-- add membership / pricing / signup details if needed
-- improve SEO metadata page-by-page
+### Forside (`/`)
+- Hero med klare CTA’er
+- Træningstider direkte i toppen
+- Intro til klubben
+- FAQ for nye medlemmer
+- Kort og kontaktsektion
 
-## Repository
+### Kontakt (`/kontakt`)
+- Kontaktoplysninger
+- Prøvetrænings-flow
+- Formular til nye medlemmer / forældre
 
-GitHub:
+### Om Judo (`/om-judo`)
+- Kort introduktion til hvad judo er
+- Fordele ved sporten
+- Intro til bælter og udvikling
 
-<https://github.com/nikolajflojgaard/mjk-judo>
+### Om Klubben (`/om-klubben`)
+- Klubbens værdier
+- Hvad man kan forvente som nyt medlem
+- Praktisk information
+
+### Træning (`/traening`)
+- Oversigt over hold og træningstider
+
+## 🎨 Design
+
+- **Stil:** Enkel, lokal og troværdig
+- **Font:** Inter
+- **Fokus:** Mobilvenligt layout og tydelige call-to-actions
+- **Mål:** Gøre det nemt at forstå klubben og komme i gang hurtigt
+
+## ✅ Det der er lavet i projektet
+
+- Forsiden er gjort mere lokal og mindre template-agtig
+- Træningstider er flyttet højt op i brugerflowet
+- FAQ for nye medlemmer er tilføjet
+- “Første gang”-sektion er tilføjet
+- Kontaktflowet er gjort mere direkte mod prøvetræning
+- Fake map-placeholder er erstattet med rigtigt embed
+- Sociale links og kontaktoplysninger er opdateret
+- Billeder og sektioner er justeret til klubbens faktiske indhold
+- Build er gjort fungerende igen
+
+## 📝 Bemærkninger
+
+Projektet stammer fra en Astro-baseret starter, men er tilpasset kraftigt til Måløv Judoklub.
+
+Hvis siden skal videreudvikles, giver det mest mening at tage næste skridt med:
+- flere rigtige klubbilleder
+- korrekt formular-backend
+- medlemskab / kontingent-side hvis relevant
+- yderligere lokal SEO
+
+---
+
+**Lavet af:** ReichkendlerSolutions / Nikolaj Fløjgaard  
+**Projekt:** Website for Måløv Judoklub
