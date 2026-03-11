@@ -31,13 +31,13 @@ interface Site {
 
 // Site configuration
 export const SITE: Site = {
-  website: "https://example.com/",
-  author: "Website Rescue",
-  profile: "https://example.com/",
-  desc: "Vi redder hjemmesider fra at være usynlige. 5 dage. Fast pris. Målbare resultater.",
-  title: "Website Rescue",
-  ogImage: "avatar.jpg",
-  lightAndDarkMode: true,
+  website: "https://mjk-judo.dk/",
+  author: "Måløv Judoklub",
+  profile: "https://mjk-judo.dk/",
+  desc: "Måløv Judoklub tilbyder judo i Måløv for børn fra 7 år, unge og voksne. Prøv 2 uger gratis og kom i gang i et trygt lokalt fællesskab.",
+  title: "Måløv Judoklub",
+  ogImage: "images/mjk-logo.png",
+  lightAndDarkMode: false,
   postPerIndex: 10,
   postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000,

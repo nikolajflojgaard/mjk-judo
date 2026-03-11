@@ -1,4 +1,6 @@
 ---
+import { SITE } from "../consts";
+
 export interface Props {
   title?: string;
   description?: string;
@@ -8,6 +10,30 @@ const {
   title = "Måløv Judoklub - Judo i Måløv for børn, unge og voksne", 
   description = "Måløv Judoklub tilbyder judo i Måløv for børn fra 7 år, unge og voksne. Prøv 2 uger gratis og kom i gang i et trygt lokalt fællesskab."
 } = Astro.props;
+
+const canonical = Astro.url ? new URL(Astro.url.pathname, SITE.website).toString() : SITE.website;
+const ogImage = new URL(SITE.ogImage, SITE.website).toString();
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  name: "Måløv Judoklub",
+  url: SITE.website,
+  image: ogImage,
+  description,
+  telephone: "+45 21418406",
+  email: "mjkjudo@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Måløv Hovedgade 50",
+    postalCode: "2760",
+    addressLocality: "Måløv",
+    addressCountry: "DK"
+  },
+  sameAs: [
+    "https://www.facebook.com/MaaloevJudoklub/",
+    "https://www.instagram.com/mjkjudo/"
+  ]
+};
 ---
 
 <!DOCTYPE html>
@@ -17,10 +43,20 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="da_DK" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Måløv Judoklub" />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)}></script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

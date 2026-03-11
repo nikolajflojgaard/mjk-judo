@@ -1,21 +1,10 @@
-import { getCollection } from "astro:content";
-import rss from "@astrojs/rss";
-import { SITE } from "@/config";
-import { getPath } from "@/utils/getPath";
-import getSortedPosts from "@/utils/getSortedPosts";
+import type { APIRoute } from "astro";
 
-export async function GET() {
-  const posts = await getCollection("blog", ({ data }) => !data.draft && !data.unlisted);
-  const sortedPosts = getSortedPosts(posts);
-  return rss({
-    title: SITE.title,
-    description: SITE.desc,
-    site: SITE.website,
-    items: sortedPosts.map(({ data, id, filePath }) => ({
-      link: getPath(id, filePath),
-      title: data.title,
-      description: data.description,
-      pubDate: new Date(data.modDatetime ?? data.pubDatetime),
-    })),
+export const GET: APIRoute = () => {
+  return new Response("", {
+    status: 200,
+    headers: {
+      "Content-Type": "application/rss+xml; charset=utf-8",
+    },
   });
-}
+};
