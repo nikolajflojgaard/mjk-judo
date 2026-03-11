@@ -65,6 +65,55 @@ mjk-judo/
 └── package.json
 ```
 
+## 📦 Byg en `site.zip` til upload i filemanager
+
+Hvis siden skal deployes manuelt via en hosting filemanager, kan du bygge en zip-fil med det færdige site sådan her:
+
+```bash
+npm run build
+cd dist
+zip -r ../site.zip .
+```
+
+Det giver en fil i projektroden:
+
+```text
+site.zip
+```
+
+### Vigtigt
+
+Zip **indholdet af `dist/`** — ikke selve `dist`-mappen.
+
+Det vil sige, at zip-filen efter upload og udpakning skal ende med at lægge filer direkte i webroden, fx:
+
+```text
+index.html
+kontakt/
+om-judo/
+om-klubben/
+traening/
+_astro/
+images/
+robots.txt
+rss.xml
+```
+
+### Typisk deploy-flow
+
+1. Kør build:
+   ```bash
+   npm run build
+   ```
+2. Lav zip:
+   ```bash
+   cd dist
+   zip -r ../site.zip .
+   ```
+3. Upload `site.zip` i hostingens filemanager
+4. Udpak zip-filen i webroden (`public_html`, `htdocs` eller tilsvarende)
+5. Sørg for at filer og mapper ligger direkte i webroden — ikke inde i en ekstra `dist/`-mappe
+
 ## 📄 Sider
 
 ### Forside (`/`)
