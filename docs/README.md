@@ -7,7 +7,7 @@
 - Service: `mjk-judo`
 - Repository: `mjk-judo`
 - Owner: `Nikolaj Flojgaard`
-- Files inventoried: `114`
+- Files inventoried: `97`
 - Manifests: `2`
 - Frameworks detected: `1`
 - Routes detected: `0`
