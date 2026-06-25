@@ -1,0 +1,963 @@
+{
+  "counts": {
+    "deployments": 0,
+    "entrypoints": 0,
+    "files": 114,
+    "flows": 0,
+    "frameworks": 1,
+    "interfaces": 7,
+    "manifests": 2,
+    "routes": 0
+  },
+  "deployments": [],
+  "entrypoints": [],
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 510,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": "README.md",
+      "size": 5056,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "astro.config.mjs",
+      "size": 182,
+      "suffix": ".mjs",
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "path": "biome.json",
+      "size": 1351,
+      "suffix": ".json",
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "path": "code-docs.yml",
+      "size": 274,
+      "suffix": ".yml",
+      "tags": []
+    },
+    {
+      "path": "jsconfig.json",
+      "size": 95,
+      "suffix": ".json",
+      "tags": []
+    },
+    {
+      "path": "package-lock.json",
+      "size": 239132,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    },
+    {
+      "path": "package.json",
+      "size": 346,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    },
+    {
+      "path": "tailwind.config.mjs",
+      "size": 575,
+      "suffix": ".mjs",
+      "tags": []
+    },
+    {
+      "path": "tsconfig.json",
+      "size": 231,
+      "suffix": ".json",
+      "tags": [
+        "config"
+      ]
+    },
+    {
+      "path": "vercel.json",
+      "size": 5004,
+      "suffix": ".json",
+      "tags": []
+    },
+    {
+      "path": ".github/workflows/code-docs.yml",
+      "size": 583,
+      "suffix": ".yml",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/.gitignore",
+      "size": 1,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/applypatch-msg",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/commit-msg",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/h",
+      "size": 551,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/husky.sh",
+      "size": 160,
+      "suffix": ".sh",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-applypatch",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-checkout",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-commit",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-merge",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/post-rewrite",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-applypatch",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-auto-gc",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-commit",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-merge-commit",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-push",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/pre-rebase",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": ".husky/_/prepare-commit-msg",
+      "size": 39,
+      "suffix": "",
+      "tags": []
+    },
+    {
+      "path": "public/about.png",
+      "size": 1351215,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "size": 2582,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/avatar.jpg",
+      "size": 103370,
+      "suffix": ".jpg",
+      "tags": []
+    },
+    {
+      "path": "public/favicon-16.png",
+      "size": 360,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/favicon-32.png",
+      "size": 576,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/favicon-48.png",
+      "size": 786,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/favicon.ico",
+      "size": 2991,
+      "suffix": ".ico",
+      "tags": []
+    },
+    {
+      "path": "public/favicon.svg",
+      "size": 272,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "public/hero.png",
+      "size": 1280599,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "size": 621,
+      "suffix": ".webmanifest",
+      "tags": []
+    },
+    {
+      "path": "public/toggle-theme.js",
+      "size": 3419,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "public/fonts/atkinson-bold.woff",
+      "size": 23780,
+      "suffix": ".woff",
+      "tags": []
+    },
+    {
+      "path": "public/fonts/atkinson-regular.woff",
+      "size": 22792,
+      "suffix": ".woff",
+      "tags": []
+    },
+    {
+      "path": "public/images/README.md",
+      "size": 666,
+      "suffix": ".md",
+      "tags": []
+    },
+    {
+      "path": "public/images/group.png",
+      "size": 1533,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/images/instagram-1.jpg",
+      "size": 12,
+      "suffix": ".jpg",
+      "tags": []
+    },
+    {
+      "path": "public/images/judo-er-for-alle.jpg",
+      "size": 141294,
+      "suffix": ".jpg",
+      "tags": []
+    },
+    {
+      "path": "public/images/judo-icon.png",
+      "size": 1716,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/images/mathilde-oliver-original.jpg",
+      "size": 40262,
+      "suffix": ".jpg",
+      "tags": []
+    },
+    {
+      "path": "public/images/mathilde-oliver.jpg",
+      "size": 40262,
+      "suffix": ".jpg",
+      "tags": []
+    },
+    {
+      "path": "public/images/mjk-logo.png",
+      "size": 42138,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/images/yoga.png",
+      "size": 1494,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "public/resume/nikolaj-flojgaard-cv.pdf",
+      "size": 65575,
+      "suffix": ".pdf",
+      "tags": []
+    },
+    {
+      "path": "src/config.ts",
+      "size": 162,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/constants.ts",
+      "size": 1773,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/consts.ts",
+      "size": 2122,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/content.config.ts",
+      "size": 1072,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/env.d.ts",
+      "size": 145,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/middleware.js",
+      "size": 415,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "src/types.d.ts",
+      "size": 210,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconArchive.svg",
+      "size": 484,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconArrowLeft.svg",
+      "size": 385,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconArrowRight.svg",
+      "size": 387,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconBrandX.svg",
+      "size": 415,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconCalendar.svg",
+      "size": 658,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconChevronLeft.svg",
+      "size": 346,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconChevronRight.svg",
+      "size": 346,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconEdit.svg",
+      "size": 487,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconFacebook.svg",
+      "size": 406,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconGitHub.svg",
+      "size": 624,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconHash.svg",
+      "size": 404,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconLinkedin.svg",
+      "size": 509,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconMail.svg",
+      "size": 429,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconMenuDeep.svg",
+      "size": 379,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconMoon.svg",
+      "size": 402,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconPinterest.svg",
+      "size": 493,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconRss.svg",
+      "size": 429,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconSearch.svg",
+      "size": 393,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconSunHigh.svg",
+      "size": 629,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconTelegram.svg",
+      "size": 374,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconWhatsapp.svg",
+      "size": 484,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/icons/IconX.svg",
+      "size": 356,
+      "suffix": ".svg",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/AstroPaper-v3.png",
+      "size": 173038,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/AstroPaper-v4.png",
+      "size": 161586,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/AstroPaper-v5.png",
+      "size": 178043,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/assets/images/forrest-gump-quote.png",
+      "size": 281244,
+      "suffix": ".png",
+      "tags": []
+    },
+    {
+      "path": "src/components/Footer.astro",
+      "size": 2377,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/components/Header.astro",
+      "size": 2421,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/AboutLayout.astro",
+      "size": 707,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/BlogPostLayout.astro",
+      "size": 12526,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/Layout.astro",
+      "size": 2506,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/Main.astro",
+      "size": 1178,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/layouts/PostDetails.astro",
+      "size": 15656,
+      "suffix": ".astro",
+      "tags": []
+    },
+    {
+      "path": "src/pages/index.astro",
+      "size": 21810,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/kontakt.astro",
+      "size": 7196,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/om-judo.astro",
+      "size": 3741,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/om-klubben.astro",
+      "size": 5594,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "size": 373,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "size": 213,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/traening.astro",
+      "size": 3401,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/styles/global.css",
+      "size": 428,
+      "suffix": ".css",
+      "tags": []
+    },
+    {
+      "path": "src/styles/typography.css",
+      "size": 2795,
+      "suffix": ".css",
+      "tags": []
+    },
+    {
+      "path": "src/utils/generateOgImages.ts",
+      "size": 608,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getPath.ts",
+      "size": 1267,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getPostsByGroupCondition.ts",
+      "size": 640,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getPostsByTag.ts",
+      "size": 330,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getSortedPosts.ts",
+      "size": 443,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/getUniqueTags.ts",
+      "size": 604,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/loadGoogleFont.ts",
+      "size": 1450,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/postFilter.ts",
+      "size": 379,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/readingTime.ts",
+      "size": 598,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/remarkLazyLoadImages.mjs",
+      "size": 297,
+      "suffix": ".mjs",
+      "tags": []
+    },
+    {
+      "path": "src/utils/slugify.ts",
+      "size": 183,
+      "suffix": ".ts",
+      "tags": []
+    },
+    {
+      "path": "src/utils/og-templates/post.js",
+      "size": 7094,
+      "suffix": ".js",
+      "tags": []
+    },
+    {
+      "path": "src/utils/og-templates/site.js",
+      "size": 3948,
+      "suffix": ".js",
+      "tags": []
+    }
+  ],
+  "flows": [],
+  "frameworks": [
+    {
+      "name": "Astro",
+      "source": "package.json"
+    }
+  ],
+  "interfaces": [
+    {
+      "path": "src/pages/index.astro",
+      "size": 21810,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/kontakt.astro",
+      "size": 7196,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/om-judo.astro",
+      "size": 3741,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/om-klubben.astro",
+      "size": 5594,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/robots.txt.ts",
+      "size": 373,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/rss.xml.ts",
+      "size": 213,
+      "suffix": ".ts",
+      "tags": [
+        "interface"
+      ]
+    },
+    {
+      "path": "src/pages/traening.astro",
+      "size": 3401,
+      "suffix": ".astro",
+      "tags": [
+        "interface"
+      ]
+    }
+  ],
+  "manifests": [
+    {
+      "path": "package-lock.json",
+      "size": 239132,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    },
+    {
+      "path": "package.json",
+      "size": 346,
+      "suffix": ".json",
+      "tags": [
+        "manifest"
+      ]
+    }
+  ],
+  "repo": "mjk-judo",
+  "root": ".",
+  "routes": [],
+  "tree": {
+    ".github": {
+      "workflows": {
+        "code-docs.yml": null
+      }
+    },
+    ".gitignore": null,
+    ".husky": {
+      "_": {
+        ".gitignore": null,
+        "applypatch-msg": null,
+        "commit-msg": null,
+        "h": null,
+        "husky.sh": null,
+        "post-applypatch": null,
+        "post-checkout": null,
+        "post-commit": null,
+        "post-merge": null,
+        "post-rewrite": null,
+        "pre-applypatch": null,
+        "pre-auto-gc": null,
+        "pre-commit": null,
+        "pre-merge-commit": null,
+        "pre-push": null,
+        "pre-rebase": null,
+        "prepare-commit-msg": null
+      }
+    },
+    "README.md": null,
+    "astro.config.mjs": null,
+    "biome.json": null,
+    "code-docs.yml": null,
+    "jsconfig.json": null,
+    "package-lock.json": null,
+    "package.json": null,
+    "public": {
+      "about.png": null,
+      "apple-touch-icon.png": null,
+      "avatar.jpg": null,
+      "favicon-16.png": null,
+      "favicon-32.png": null,
+      "favicon-48.png": null,
+      "favicon.ico": null,
+      "favicon.svg": null,
+      "fonts": {
+        "atkinson-bold.woff": null,
+        "atkinson-regular.woff": null
+      },
+      "hero.png": null,
+      "images": {
+        "README.md": null,
+        "group.png": null,
+        "instagram-1.jpg": null,
+        "judo-er-for-alle.jpg": null,
+        "judo-icon.png": null,
+        "mathilde-oliver-original.jpg": null,
+        "mathilde-oliver.jpg": null,
+        "mjk-logo.png": null,
+        "yoga.png": null
+      },
+      "manifest.webmanifest": null,
+      "resume": {
+        "nikolaj-flojgaard-cv.pdf": null
+      },
+      "toggle-theme.js": null
+    },
+    "src": {
+      "assets": {
+        "icons": {
+          "IconArchive.svg": null,
+          "IconArrowLeft.svg": null,
+          "IconArrowRight.svg": null,
+          "IconBrandX.svg": null,
+          "IconCalendar.svg": null,
+          "IconChevronLeft.svg": null,
+          "IconChevronRight.svg": null,
+          "IconEdit.svg": null,
+          "IconFacebook.svg": null,
+          "IconGitHub.svg": null,
+          "IconHash.svg": null,
+          "IconLinkedin.svg": null,
+          "IconMail.svg": null,
+          "IconMenuDeep.svg": null,
+          "IconMoon.svg": null,
+          "IconPinterest.svg": null,
+          "IconRss.svg": null,
+          "IconSearch.svg": null,
+          "IconSunHigh.svg": null,
+          "IconTelegram.svg": null,
+          "IconWhatsapp.svg": null,
+          "IconX.svg": null
+        },
+        "images": {
+          "AstroPaper-v3.png": null,
+          "AstroPaper-v4.png": null,
+          "AstroPaper-v5.png": null,
+          "forrest-gump-quote.png": null
+        }
+      },
+      "components": {
+        "Footer.astro": null,
+        "Header.astro": null
+      },
+      "config.ts": null,
+      "constants.ts": null,
+      "consts.ts": null,
+      "content.config.ts": null,
+      "env.d.ts": null,
+      "layouts": {
+        "AboutLayout.astro": null,
+        "BlogPostLayout.astro": null,
+        "Layout.astro": null,
+        "Main.astro": null,
+        "PostDetails.astro": null
+      },
+      "middleware.js": null,
+      "pages": {
+        "index.astro": null,
+        "kontakt.astro": null,
+        "om-judo.astro": null,
+        "om-klubben.astro": null,
+        "robots.txt.ts": null,
+        "rss.xml.ts": null,
+        "traening.astro": null
+      },
+      "styles": {
+        "global.css": null,
+        "typography.css": null
+      },
+      "types.d.ts": null,
+      "utils": {
+        "generateOgImages.ts": null,
+        "getPath.ts": null,
+        "getPostsByGroupCondition.ts": null,
+        "getPostsByTag.ts": null,
+        "getSortedPosts.ts": null,
+        "getUniqueTags.ts": null,
+        "loadGoogleFont.ts": null,
+        "og-templates": {
+          "post.js": null,
+          "site.js": null
+        },
+        "postFilter.ts": null,
+        "readingTime.ts": null,
+        "remarkLazyLoadImages.mjs": null,
+        "slugify.ts": null
+      }
+    },
+    "tailwind.config.mjs": null,
+    "tsconfig.json": null,
+    "vercel.json": null
+  },
+  "truncated": false
+}

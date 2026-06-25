@@ -1,0 +1,10 @@
+flowchart TB
+  Repo[mjk-judo repository]
+  Frameworks[Detected frameworks]
+  Repo -->|uses| Frameworks
+  Manifests[Build and dependency manifests]
+  Repo -->|defines| Manifests
+  Interfaces[Interfaces and routes]
+  Repo -->|exposes| Interfaces
+  Docs[Generated documentation]
+  Repo -->|documents| Docs
